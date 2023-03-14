@@ -1,6 +1,7 @@
 
 precos = []
 categoria = []
+
 while(True):
     descricao = input("Descricao do Produto: ")
     categoria.append(descricao)
