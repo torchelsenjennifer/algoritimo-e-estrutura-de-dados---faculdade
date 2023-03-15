@@ -1,13 +1,11 @@
-nome = []
-idade = []
-cidade = []
+def idadeObrigatorio(nome = 'jennifer', cidade='Pelotas', idade=10):
+     if(idade>=18):
+          return 'É maior de idade!'
+     else:
+          return 'É menor de idade!'
 
-while(True):
-     anos = int(input("Qual a sua idade: "))
-     idade.append(anos)
-     name = input("Insira o seu nome: ")
-     nome.append(name)
-     city = input("Qual a sua cidade: ")
-     cidade.append(city)
+     
+print(f"{idadeObrigatorio()}")
 
+     
      

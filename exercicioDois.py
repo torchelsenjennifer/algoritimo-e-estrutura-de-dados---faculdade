@@ -9,30 +9,28 @@ def menu(escolha):
     return escolha
 
 def inclusao(nomeFilme):
-     print("\n=======Voce acesso à inclusão de filmes!!=======\n")
-     nomeFilme = input("Insira o nome do filme: ")
-     return nomeFilme
-    #  ainda = input("Ainda inserir filmes: ")
-    #  if(ainda == "sim"):
-    #   return filme
-    #  else:
-    #      return nome filme
+    filme.append(nomeFilme)
+
     
-def listagem(filme):
-    print("=== Voce acesso à listagem de filmes!! ===\n")
+def listagem():
+    print("=== Voce acessou à listagem de filmes!! ===\n")
     for i in filme:
-        print(i, end = ' ')
+        print(i)
+
+
 
 while(True):
 
     opcao = menu(f"escolha")
+
     if(opcao == 1 ):
-        inclusao( f"nomeFilme")
-        filme.append("nomeFilme")
+        print("\n=======Voce acesso à inclusão de filmes!!=======\n")
+        nomeFilme = input("Insira o nome do filme: ")
+        inclusao(nomeFilme)
         print('Incluido com Sucesso!')
 
     elif(opcao == 2):
-         listagem(filme)
+         listagem()
 
     elif(opcao == 3):
         print("=== Voce acessou à listagem de filmes em Ordem Alfabetica!! ===\n")
