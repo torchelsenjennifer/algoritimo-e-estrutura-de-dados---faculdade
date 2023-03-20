@@ -7,3 +7,12 @@ while(True):
     if(preco == 0):
         break 
     print(f"{retornaCentavos(preco):6.2f} centavos")
+
+
+
+# import math
+# def centavos(preco):
+#     preco_sem_centavos = math.floor(preco)
+#     return preco - preco_sem_centavos
+
+# centavos(15.40)
